@@ -1,0 +1,205 @@
+/* IMPORTAÇÃO DE FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Text:wght@200..700&display=swap');
+
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+:root {
+    /* CORES */
+    --azul-pricipal: #33A8DB;
+    --cor-fundo: black;
+    --cor-texto: #ffffff;
+    --gradient: linear-gradient( #33A8DB, #1472b7);
+
+    /* FONTES */
+    --fonte-principal: 'Raleway', sans-serif;
+}
+
+/* ESTILOS GLOBAIS */
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+}
+
+h1 {
+    font-family: var(--fonte-principal);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 40px;
+    /* Gradiente*/
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--azul-pricipal);
+    letter-spacing: 4px;
+    font-size: 32px;
+}
+
+p {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    color: var(--cor-texto);
+    font-size: 16px;
+}
+
+/* COMPONENTES */
+/* BOTÃO */
+button {
+    cursor: pointer;
+    color: var(--azul-pricipal);
+    background: transparent;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 19px;
+    height: 57px;
+    border: 2px solid;
+    border-image-source: var(--gradient);
+    border-image-slice: 10;
+    white-space: nowrap;
+    transition: all 0.5s ease-in-out;
+}
+button:hover {
+    background: linear-gradient(#33A8DB, #1472b7);
+    color: var(--cor-texto);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px #33A8DB;
+}
+
+/* HEADER */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 40px 60px;
+    background-color: rgba( 0, 0, 0, .2);
+    width: 260px;
+    height: 260px;
+    border-radius: 100%;
+    margin: auto;
+    margin-bottom: 16px;
+}
+
+.banner-content p {
+    font-size: 1.25rem;
+    margin: 20px 0 24px;
+}
+
+.banner {
+    background-size: cover;
+    border-bottom: 1px solid #33A8DB;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png');
+}
+
+.banner .banner-content {
+    text-align: center;
+    padding: 60px;
+    width: 800px;
+    margin: auto;
+}
+
+/* MAIN */
+
+section {
+    margin: 0 auto 0;
+    padding: 100px 0;
+}
+
+/* section h2 { 
+    padding: 10px;
+}*/
+
+#course-content {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #33A8DB;
+}
+
+button {
+    padding: 16px;
+}
+
+.module span{
+    color: #33A8DB;
+}
+
+.module {
+    color: white;
+    border: 1px solid #33A8DB;
+    border-radius: 57px;
+    width: 535px;
+    height: 51px;
+    background-color: #252525;
+    padding: 16px;
+    box-shadow: inset 2px 6px 10px black;
+    margin: 20px auto 24px;
+}
+
+.module:hover {
+    box-shadow: 0px 0px 30px #33A8DB;
+    font-weight: bold;
+}
+
+#transform-world {
+    border-bottom: 1px solid #33A8DB;
+    background-image: url(/assets/images/woman-code.png);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#transform-world p{
+    font-weight: bold;
+    text-transform: lowercase;
+    font-size: 30px;
+    max-width: 500px;
+    text-shadow: 2px 2px #33A8DB;
+    padding: 150px;
+}
+
+#professional-challenges {
+    text-align: center;
+    width: 900px;
+}
+
+#professional-challenges img {
+    margin: 30px;
+}
+
+/* FOOTER */
+footer .dio-logo{
+    width: 300px;
+}
+
+footer {
+    border-top: 1px solid #33A8DB;
+    text-align: center;
+    padding: 60px;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+}
+
+footer a {
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    text-decoration: none;
+    color: #33A8DB;
+}
+
+footer a:hover {
+    color: yellow;
+}
+
+footer p {
+    padding-top: 10px;
+}
